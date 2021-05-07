@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 	(
 	features="C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/test/java/feature/NewSCDLoginFeature.feature",
 	glue= {"stepdefinition"},
-	plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
+		plugin={"pretty", "html:target/cucumber", "json:target/cucumber.json"},
+	//plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
 			publish = true,
 	tags="@Smoketest1 or @Smoketest2",
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest6", 
