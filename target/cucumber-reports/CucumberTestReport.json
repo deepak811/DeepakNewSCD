@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-04T10:04:18.417Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "verify title of new SCD login page",
+        "description": "",
+        "id": "newscd-functional-test;verify-title-of-new-scd-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21687000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "launch new SCD url",
+            "match": {
+              "location": "stepdefinition.LoginPage.launch_new_SCD_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2091000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "check title of login page",
+            "match": {
+              "location": "stepdefinition.LoginPage.check_title_of_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3002000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify actual title with expected title of New SCD login page",
+            "match": {
+              "location": "stepdefinition.LoginPage.verify_actual_title_with_expected_title_of_New_SCD_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoketest1"
+          }
+        ]
+      }
+    ],
+    "name": "NewSCD functional test",
+    "description": "",
+    "id": "newscd-functional-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/NewSCDLoginFeature.feature",
+    "tags": []
+  }
+]
