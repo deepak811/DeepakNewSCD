@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-04T10:04:18.417Z",
+        "start_timestamp": "2021-05-07T14:48:19.346Z",
         "before": [
           {
             "result": {
-              "duration": 5000000,
+              "duration": 2002800,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1003400,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21687000000,
+              "duration": 17095488000,
               "status": "passed"
             },
             "line": 10,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2091000000,
+              "duration": 2055061100,
               "status": "passed"
             },
             "line": 11,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 3002000000,
+              "duration": 3007122000,
               "status": "passed"
             },
             "line": 12,
@@ -73,6 +73,110 @@
         "tags": [
           {
             "name": "@Smoketest1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-07T14:48:41.610Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1012600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "verify new SCD login functionalty with Negative Login Credentials",
+        "description": "",
+        "id": "newscd-functional-test;verify-new-scd-login-functionalty-with-negative-login-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click on New SCD username text field",
+            "match": {
+              "location": "stepdefinition.LoginPage.user_click_on_new_scd_username_text_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27045766200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters invalid username and password",
+            "match": {
+              "location": "stepdefinition.LoginPage.user_enters_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on sign in button to login into New SCD",
+            "match": {
+              "location": "stepdefinition.LoginPage.click_on_sign_in_button_to_login_into_new_scd()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user refresh the login page",
+            "match": {
+              "location": "stepdefinition.LoginPage.user_refresh_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enters valid username and password",
+            "match": {
+              "location": "stepdefinition.LoginPage.user_enters_valid_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user click on sign in button to login into New SCD",
+            "match": {
+              "location": "stepdefinition.LoginPage.user_click_on_sign_in_button_to_login_into_new_scd()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoketest2"
           }
         ]
       }
