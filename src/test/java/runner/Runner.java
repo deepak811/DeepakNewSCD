@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 		plugin={"pretty", "html:target/cucumber", "json:target/cucumber-reports/CucumberTestReport.json"},
 	//plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
 			
-	tags="@Smoketest1 or @Smoketest2 or @Smoketest3",
+	tags="@Smoketest1 or @Smoketest2",
 			publish = true,
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest6", 
 				//tags="@Smoketest1 or @Smoketest2 or @Smoketest7", 
