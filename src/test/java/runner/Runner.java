@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 	(
 	features="C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/test/java/feature/NewSCDLoginFeature.feature",
 	glue= {"stepdefinition"},
-		plugin={"pretty", "html:target/cucumber", "json:target/cucumber-reports/CucumberTestReport.json"},
+		plugin={"pretty", "html:target/cucumber-reports/cucumberhtml.html", "json:target/cucumber-reports/CucumberTestReport.json",
+				"junit:target/cucumber-reports/Cucumberjunit.xml"},
 	//plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
 			
 	tags="@Smoketest1 or @Smoketest2",
