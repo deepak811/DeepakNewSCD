@@ -102,7 +102,7 @@
                 <projectName>NewSCD</projectName>
                 <skip>false</skip>
                 <outputDirectory>target/cucumber-reports</outputDirectory>
-                <inputDirectory>target/cucumber-reports/CucumberTestReport.json</inputDirectory>
+                <inputDirectory>target/cucumber-reports</inputDirectory>
                 <jsonFiles>
                     <param>**/*.json</param>
                 </jsonFiles>
