@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.236">
-    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="11.509">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="50.557">
+    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="23.155">
         <system-out><![CDATA[Given launch new SCD url....................................................passed
 When check title of login page..............................................passed
 Then verify actual title with expected title of New SCD login page..........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="verify new SCD login functionalty with Negative Login Credentials" time="26.4">
+    <testcase classname="NewSCD functional test" name="verify new SCD login functionalty with Negative Login Credentials" time="27.05">
         <system-out><![CDATA[Given user click on New SCD username text field.............................passed
 When user enters invalid username and password..............................passed
 And click on sign in button to login into New SCD...........................passed
