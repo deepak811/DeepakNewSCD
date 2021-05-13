@@ -99,14 +99,13 @@
                 <goal>generate</goal>
             </goals>
             <configuration>
-                <projectName>NewSCD</projectName>
-                <skip>false</skip>
-                <outputDirectory>target/cucumber-reports</outputDirectory>
-                <inputDirectory>target/cucumber-reports</inputDirectory>
-                <jsonFiles>
-                    <param>**/*.json</param>
-                </jsonFiles>
-            </configuration>
+     <projectName>NewSCD</projectName>
+     <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+     <inputDirectory>${project.build.directory}/CucumberTestReport.json</inputDirectory>
+     <jsonFiles>
+          <param>**/*.json</param>
+     </jsonFiles>
+</configuration>
         </execution>
     </executions>
 </plugin>
