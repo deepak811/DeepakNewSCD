@@ -22,7 +22,7 @@ import baseClass.BaseClass;
 import io.cucumber.core.gherkin.messages.internal.gherkin.internal.com.eclipsesource.json.ParseException;
 
 public class EditUserDetail extends BaseClass {
-	@FindBy(id="sidebarCollapse")
+	@FindBy(xpath="//i[@class='material-icons md-18']")
 	WebElement Expandbutton;
 	
 	@FindBy(xpath="//a[@id='3001']")
@@ -85,7 +85,7 @@ WebElement UserRoles;
 	
 	public void ExpandAndUsrMgmt() throws InterruptedException
 	{
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Expandbutton.click();
 		Thread.sleep(2000);
 		UserMgmtButton.click();
