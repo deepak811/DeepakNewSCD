@@ -22,7 +22,7 @@ import baseClass.BaseClass;
 import io.cucumber.core.gherkin.messages.internal.gherkin.internal.com.eclipsesource.json.ParseException;
 
 public class EditUserDetail extends BaseClass {
-	@FindBy(xpath="//i[text()='chevron_left ']")
+	@FindBy(xpath="//button[@title='Collapse']")
 	WebElement Expandbutton;
 	
 	@FindBy(xpath="//a[@id='3001']")
