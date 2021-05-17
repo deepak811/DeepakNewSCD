@@ -101,6 +101,8 @@
             <configuration>
      <projectName>NewSCD</projectName>
      <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+                            <cucumberOutput>${project.build.directory}/CucumberTestReport.json</cucumberOutput>
+    
    
      <jsonFiles>
           <param>**/*.json</param>
