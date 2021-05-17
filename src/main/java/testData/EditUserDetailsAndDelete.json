@@ -2,10 +2,10 @@
 "EditUserDetails":[ 
 
 {
-"Username":"DemoUser1",
+"Username":"DemoUser982",
 "Role":"Manager",
 "Department":"Sales Tax",
-"DeleteUserName":"Trynewuser"
+"DeleteUserName":"DemoUser982"
 
 
 }
