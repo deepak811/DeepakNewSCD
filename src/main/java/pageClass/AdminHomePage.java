@@ -163,7 +163,7 @@ driver.findElement(By.xpath("//body")).click();
 	FormDetailComments.sendKeys(Com);
 		}
 		Thread.sleep(1000);
-		//FormDetailSave.click();	 
+		FormDetailSave.click();	 
 }
 	public void UserLogout() throws InterruptedException {
 		driver.findElement(By.xpath("//i[text()='settings']")).click();
