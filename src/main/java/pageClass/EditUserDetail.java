@@ -94,7 +94,7 @@ WebElement UserRoles;
 	}
 	
 	public void EditUser() throws InterruptedException, IOException, ParseException, org.json.simple.parser.ParseException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Expandbutton.click();
 		Thread.sleep(2000);
 		UserMgmtButton.click();
