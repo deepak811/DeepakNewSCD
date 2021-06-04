@@ -3,6 +3,7 @@ package pageClass;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Iterator;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -40,29 +41,31 @@ public class LoginPageFeaturesMethods extends BaseClass{
 	System.out.println("Successfully landed on New SCD login page");
 	}
 
-	public void VerifyNewScdLoginFeature() throws IOException, ParseException, InterruptedException
-	{
-		JSONParser jparser= new JSONParser();
-		FileReader fr=new FileReader("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/testData/logincred.json");
-		JSONObject jobject=(JSONObject) jparser.parse(fr);
-		JSONArray jarray=(JSONArray) jobject.get("Credentials");
-		for(int i=0;i<jarray.size();i++)
+	
+		public void VerifyNewScdLoginFeature() throws IOException, ParseException, InterruptedException
 		{
-			JSONObject cred=(JSONObject) jarray.get(i);
-		String	user=(String)cred.get("Username");
-		String	pass=(String)cred.get("Password");
-		
-		System.out.println(user);
-        System.out.println(pass);
-        
-		username.sendKeys(user);
-		Thread.sleep(4000);
-		password.sendKeys(pass);
-		Thread.sleep(3000);
-		signin.click();
-		Thread.sleep(4000);
-		driver.navigate().refresh();
+			JSONParser jparser= new JSONParser();
+			FileReader fr=new FileReader("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/testData/logincred.json");
+			JSONObject jobject=(JSONObject) jparser.parse(fr);
+			JSONArray jarray=(JSONArray) jobject.get("Credentials");
+			for(int i=0;i<jarray.size();i++)
+			{
+				JSONObject cred=(JSONObject) jarray.get(i);
+			String	user=(String)cred.get("Username");
+			String	pass=(String)cred.get("Password");
+			
+			System.out.println(user);
+	        System.out.println(pass);
+	        
+			username.sendKeys(user);
+			Thread.sleep(4000);
+			password.sendKeys(pass);
+			Thread.sleep(3000);
+			signin.click();
+			Thread.sleep(4000);
+			driver.navigate().refresh();
+			}
 		}
+
 	}
 
-}
