@@ -100,13 +100,13 @@ WebElement UserRoles;
 	}
 	
 	public void BndrAssignmentToTL() throws InterruptedException, IOException, ParseException, org.json.simple.parser.ParseException {
-		Thread.sleep(20000);
+		Thread.sleep(10000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		activityBtn.click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		verifierQueue.click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		//JavascriptExecutor js = (JavascriptExecutor)driver;
 		JSONParser jparser= new JSONParser();
@@ -126,13 +126,13 @@ WebElement UserRoles;
 		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		addVerifierbtn.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		VerifierSearch.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		VerifierSearch.sendKeys(VerifierName);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		if(verifierCheckBox.isSelected()==false) {
 			Thread.sleep(5000);
@@ -144,7 +144,7 @@ WebElement UserRoles;
 		}
 		else 
 			verifierCancelButton.click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		for(int j=0;j<bindrList.length;j++) {
@@ -155,7 +155,7 @@ WebElement UserRoles;
 		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		searchTextBoxBinder.sendKeys(bindrList[j]);
-		Thread.sleep(30000);
+		Thread.sleep(15000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		if(binderCheckBox.isSelected()==false)
 		binderCheckBox.click();
@@ -166,12 +166,12 @@ WebElement UserRoles;
 		}*/
 		}
 		}
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.findElement(By.xpath(xp)).click();
 		if(binderAssigntoVerifier.isEnabled()==true)
 			binderAssigntoVerifier.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		
 		

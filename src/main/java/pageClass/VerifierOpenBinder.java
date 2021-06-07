@@ -51,7 +51,7 @@ public class VerifierOpenBinder extends BaseClass{
 
 	public void OpenBinderForVerifierFeature() throws IOException, ParseException, InterruptedException
 	{
-		Thread.sleep(20000);
+		Thread.sleep(5000);
 		JSONParser jparser= new JSONParser();
 		FileReader fr=new FileReader("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/testData/VerifierLogin.json");//"C:/Users/manoj.mali/git/repository2/NewSCD/src/main/java/testData/logincred.json");
 		JSONObject jobject=(JSONObject) jparser.parse(fr);
@@ -62,15 +62,15 @@ public class VerifierOpenBinder extends BaseClass{
 		String	binderId=(String)cred.get("BinderId");
 		//String	pass=(String)cred.get("Password");
 		//driver.wait(20000);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		activityBtn.click();
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		verifierQueue.click();
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		binderSearchBtn.click();
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		searchTextBoxBinder.sendKeys(binderId);
 		Thread.sleep(3000);
 		if(openBinderBtn.isEnabled()==true)

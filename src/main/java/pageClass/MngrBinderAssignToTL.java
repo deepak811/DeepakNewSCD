@@ -110,12 +110,12 @@ public class MngrBinderAssignToTL extends BaseClass{
 		//Expandbutton.click();
 		CheckDeleteUsrFun();
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		activityBtn.click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		managerQueue.click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		//JavascriptExecutor js = (JavascriptExecutor)driver;
 		JSONParser jparser= new JSONParser();
@@ -162,7 +162,7 @@ public class MngrBinderAssignToTL extends BaseClass{
 		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		searchTextBoxBinder.sendKeys(bindrList[j]);
-		Thread.sleep(30000);
+		Thread.sleep(15000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		if(binderCheckBox.isSelected()==false)
 		binderCheckBox.click();
@@ -174,14 +174,14 @@ public class MngrBinderAssignToTL extends BaseClass{
 		
 		}
 		}
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath(xp)).click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		if(binderAssigntoTL.isEnabled()==true)
 			
 		binderAssigntoTL.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 	//	driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		
 	
@@ -191,17 +191,17 @@ public class MngrBinderAssignToTL extends BaseClass{
 	public void CheckDeleteUsrFun() throws IOException, ParseException, InterruptedException, org.json.simple.parser.ParseException
 	{
 		
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		adminitvBtn.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		if(userMgmtBtn.isEnabled()) {
 		userMgmtBtn.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 	    ThreeDots.click();
-	    Thread.sleep(5000);
+	    Thread.sleep(3000);
 	    //driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 	        try {
 	        if(DeleteButton.isDisplayed()==false)
