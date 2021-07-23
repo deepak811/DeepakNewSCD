@@ -2,19 +2,30 @@ package baseClass;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
+
+
+import io.appium.java_client.windows.WindowsDriver;
+import io.appium.java_client.windows.WindowsElement;
 import io.cucumber.java.Scenario;
 import utilities.TestUtil;
 
 public class BaseClass {
 	public static WebDriver driver;
 	public static Properties prop;
+	public static WindowsDriver Windriver=null;
 	public BaseClass()
 	{
 		try
@@ -31,6 +42,19 @@ public class BaseClass {
 		}
 	}
 
+	public void WinAppDriverMethod(String path) throws MalformedURLException, InterruptedException
+	{
+		String AppPath=path;
+	DesiredCapabilities Dc=new DesiredCapabilities();
+	Dc.setCapability("app", AppPath);
+	//Dc.setCapability("platformName", "Windows");
+	//Dc.setCapability("deviceName", "WindowsPC");
+	Windriver=new WindowsDriver(new URL("http://127.0.0.1:4723/"),Dc); 
+	
+
+	}
+	
+	
 	public static void initialization()
 	{
 		
@@ -47,6 +71,7 @@ System.setProperty("webdriver.chrome.driver","C:/chromedriver1/chromedriver.exe"
 driver =new FirefoxDriver();
 
 	}
+	
 	driver.manage().window().maximize();;
 	driver.manage().deleteAllCookies();
 	driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
