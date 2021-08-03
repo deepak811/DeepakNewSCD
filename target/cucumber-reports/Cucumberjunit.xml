@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="103.524">
+    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="11.424">
+        <system-out><![CDATA[Given launch new SCD url....................................................passed
+When check title of login page..............................................passed
+Then verify actual title with expected title of New SCD login page..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="NewSCD functional test" name="After saving new password for newly created user relogin with new credentials" time="10.567">
+        <system-out><![CDATA[Given relogin with new credentials of newly created user....................passed
+When click on sign in button................................................passed
+Then user is on New SCD homepage............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="NewSCD functional test" name="Assign Binder to Verification" time="81.104">
+        <failure message="Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'&#10;System info: host: 'WIN10-SPBA33', ip: '10.2.10.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: io.appium.java_client.windows.WindowsDriver&#10;Capabilities {app: C:\Users\Deepak.Badgotya\Do..., javascriptEnabled: true, platform: WINDOWS, platformName: Windows}&#10;Session ID: 748A2B0C-8697-4612-9167-733526C4A835&#10;*** Element info: {Using=xpath, value=/Pane[@Name='Desktop 1'][@ClassName='#32769']/window[@AutomationId='frmlogoscreen'][@Name='1040SCAN : Review Wizard']/button[starts-with(@AutomationId,'Button2')][@Name='Next &amp;gt;']}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given login New SCD with Verifier...........................................passed
+When Search for a Binder....................................................failed
+Then click on Open Binder button............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'WIN10-SPBA33', ip: '10.2.10.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: C:\Users\Deepak.Badgotya\Do..., javascriptEnabled: true, platform: WINDOWS, platformName: Windows}
+Session ID: 748A2B0C-8697-4612-9167-733526C4A835
+*** Element info: {Using=xpath, value=/Pane[@Name='Desktop 1'][@ClassName='#32769']/window[@AutomationId='frmlogoscreen'][@Name='1040SCAN : Review Wizard']/button[starts-with(@AutomationId,'Button2')][@Name='Next &gt;']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.findElement(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.findElementByXPath(WindowsDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.findElement(WindowsDriver.java:1)
+	at pageClass.RunDestopFunctionality.ProcessWorkflow(RunDestopFunctionality.java:28)
+	at stepdefinition.OpenBinderWithVerifierLogin.Search_for_a_Binder(OpenBinderWithVerifierLogin.java:34)
+	at ✽.Search for a Binder(file:///C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/test/java/feature/NewSCDLoginFeature.feature:100)
+]]></failure>
+    </testcase>
+</testsuite>

@@ -14,6 +14,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.RemoteWebElement;
 
 
 
@@ -26,6 +28,8 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static WindowsDriver Windriver=null;
+	 
+	
 	public BaseClass()
 	{
 		try
@@ -49,9 +53,8 @@ public class BaseClass {
 	Dc.setCapability("app", AppPath);
 	//Dc.setCapability("platformName", "Windows");
 	//Dc.setCapability("deviceName", "WindowsPC");
-	Windriver=new WindowsDriver(new URL("http://127.0.0.1:4723/"),Dc); 
+	Windriver=new WindowsDriver<WebElement>(new URL("http://127.0.0.1:4723/"),Dc); 
 	
-
 	}
 	
 	
@@ -61,7 +64,7 @@ public class BaseClass {
 	String browsername=prop.getProperty("Browser");
 	if(browsername.equals("chrome"))
 			{
-		System.setProperty("webdriver.chrome.driver","C:/chromedriver1/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chromedriver.exe");
 		driver =new ChromeDriver();
 		
 			}
