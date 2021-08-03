@@ -35,7 +35,9 @@ public class BaseClass {
 		try
 		{
 			prop=new Properties();
-			FileInputStream fis=new FileInputStream("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/configuration/Config.properties");
+			//FileInputStream fis=new FileInputStream("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/configuration/Config.properties");
+			//below is for remote machine and above one is for ur own VDI
+			FileInputStream fis=new FileInputStream("C:/Users/automatedtesting4/.jenkins/workspace/NewSCD WebApplication Functionality/src/main/java/configuration/Config.properties");
 			prop.load(fis);
 	}
 		catch(IOException e)

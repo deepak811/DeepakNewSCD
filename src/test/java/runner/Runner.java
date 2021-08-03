@@ -10,6 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 	@CucumberOptions
 	(
 	//features="C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/test/java/feature/NewSCDLoginFeature.feature",
+			//below is for remote machine and above one is for ur own VDI
 			features="C:/Users/automatedtesting4/.jenkins/workspace/NewSCD WebApplication Functionality/src/test/java/feature/NewSCDLoginFeature.feature",
 			glue= {"stepdefinition"},
 		plugin={"pretty", "html:target/cucumber-reports/cucumberhtml.html", "json:target/cucumber-reports/CucumberTestReport.json",
@@ -29,3 +30,4 @@ import io.cucumber.junit.CucumberOptions;
 	public class Runner {
 
 }
+//1)feture file location chnage
