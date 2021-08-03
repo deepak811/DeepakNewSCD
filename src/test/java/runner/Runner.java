@@ -30,4 +30,4 @@ import io.cucumber.junit.CucumberOptions;
 	public class Runner {
 
 }
-//1)feture file location chnage
+//1)feture file location chnage2)cinfig location in base3)chromedriver location  chnage

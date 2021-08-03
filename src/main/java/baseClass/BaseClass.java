@@ -66,7 +66,10 @@ public class BaseClass {
 	String browsername=prop.getProperty("Browser");
 	if(browsername.equals("chrome"))
 			{
-		System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chromedriver.exe");
+		//below is for remote machine and above one is for ur own VDI
+		System.setProperty("webdriver.chrome.driver","C:/chromedriver/chromedriver.exe");
+		
 		driver =new ChromeDriver();
 		
 			}
