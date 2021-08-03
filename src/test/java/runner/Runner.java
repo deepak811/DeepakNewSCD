@@ -9,13 +9,14 @@ import io.cucumber.junit.CucumberOptions;
 	@RunWith(Cucumber.class)
 	@CucumberOptions
 	(
-	features="C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/test/java/feature/NewSCDLoginFeature.feature",
-	glue= {"stepdefinition"},
+	//features="C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/test/java/feature/NewSCDLoginFeature.feature",
+			features="C:/Users/automatedtesting4/.jenkins/workspace/NewSCD WebApplication Functionality/src/test/java/feature/NewSCDLoginFeature.feature",
+			glue= {"stepdefinition"},
 		plugin={"pretty", "html:target/cucumber-reports/cucumberhtml.html", "json:target/cucumber-reports/CucumberTestReport.json",
 				"junit:target/cucumber-reports/Cucumberjunit.xml"},
 	//plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
 			
-	//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5 or @Smoketest8 or @Smoketest9",
+	tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5 or @Smoketest8 or @Smoketest9",
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",
 			publish = true,
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest6", 
