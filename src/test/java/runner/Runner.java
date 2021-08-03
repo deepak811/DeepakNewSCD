@@ -15,13 +15,13 @@ import io.cucumber.junit.CucumberOptions;
 				"junit:target/cucumber-reports/Cucumberjunit.xml"},
 	//plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
 			
-	//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5 or @Smoketest8 or @Smoketest9 or @Smoketest10",
+	tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5 or @Smoketest8 or @Smoketest9 or @Smoketest10",
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",
 			publish = true,
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest6", 
 				//tags="@Smoketest1 or @Smoketest2 or @Smoketest7", 
 			//@Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5
-			tags="@Smoketest1 or @Smoketest5 or @Smoketest10",
+			//tags="@Smoketest1 or @Smoketest5 or @Smoketest10",
 	monochrome = true
 			)
 		
