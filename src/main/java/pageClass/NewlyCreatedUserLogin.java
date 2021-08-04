@@ -61,7 +61,7 @@ public class NewlyCreatedUserLogin extends BaseClass {
 		password.sendKeys(pass);
 		Thread.sleep(3000);
 		signin.click();
-		
+		Thread.sleep(3000);
 		SetSecurityFeaturesQuestions(i);
 		
 		}
