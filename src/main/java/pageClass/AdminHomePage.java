@@ -194,8 +194,8 @@ driver.findElement(By.xpath("//body")).click();
 }
 	public void UserLogout() throws InterruptedException {
 		driver.findElement(By.xpath("//i[text()='settings']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.id("log-out-btn")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//button[text()='Logout']")).click();
 		
 	}
 	
