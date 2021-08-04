@@ -59,7 +59,7 @@ public class NewlyCreatedUserLogin extends BaseClass {
 		username.sendKeys(user);
 		Thread.sleep(2000);
 		password.sendKeys(pass);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		signin.click();
 		
 		SetSecurityFeaturesQuestions(i);
