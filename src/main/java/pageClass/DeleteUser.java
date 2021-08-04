@@ -57,7 +57,7 @@ public class DeleteUser extends BaseClass{
 	public void DeleteUsrFrmAdmin() throws IOException, ParseException, InterruptedException
 	{
 		JSONParser jparser= new JSONParser();
-		FileReader fr=new FileReader("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/testData/EditUserDetailsAndDelete.json");
+		FileReader fr=new FileReader(System.getProperty("user.dir")+"/src/main/java/testData/EditUserDetailsAndDelete.json");
 		JSONObject jobject=(JSONObject) jparser.parse(fr);
 		JSONArray jarray=(JSONArray) jobject.get("EditUserDetails");
 		for(int i=0;i<jarray.size();i++)

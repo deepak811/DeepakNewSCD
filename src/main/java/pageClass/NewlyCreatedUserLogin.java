@@ -156,7 +156,7 @@ public class NewlyCreatedUserLogin extends BaseClass {
 	{
 		 
 		JSONParser jparser= new JSONParser();
-		FileReader fr=new FileReader("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/testData/CreateNewUserFormDetails.json");
+		FileReader fr=new FileReader(System.getProperty("user.dir")+"/src/main/java/testData/CreateNewUserFormDetails.json");
 		JSONObject jobject=(JSONObject) jparser.parse(fr);
 		JSONArray jarray=(JSONArray) jobject.get("FormDetails");
 		for(int i=0;i<jarray.size();i++)

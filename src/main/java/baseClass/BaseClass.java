@@ -1,9 +1,12 @@
 package baseClass;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -36,8 +39,9 @@ public class BaseClass {
 		{
 			prop=new Properties();
 			//FileInputStream fis=new FileInputStream("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/configuration/Config.properties");
+FileInputStream fis=new FileInputStream( System.getProperty("user.dir")+"/src/main/java/configuration/Config.properties");
 			//below is for remote machine and above one is for ur own VDI
-			FileInputStream fis=new FileInputStream("C:/Users/automatedtesting4/.jenkins/workspace/NewSCD WebApplication Functionality/src/main/java/configuration/Config.properties");
+			//FileInputStream fis=new FileInputStream("C:/Users/automatedtesting4/.jenkins/workspace/NewSCD WebApplication Functionality/src/main/java/configuration/Config.properties");
 			prop.load(fis);
 	}
 		catch(IOException e)
@@ -47,6 +51,13 @@ public class BaseClass {
 			
 		}
 	}
+	 public static String printCurrentWorkingDirectory1() {
+		 File currDir = new File(".");
+		 String path = currDir.getAbsolutePath();
+		 path = path.substring(0, path.length()-1);
+		 System.out.println(path);
+		return path;
+		 }
 
 	public void WinAppDriverMethod(String path) throws MalformedURLException, InterruptedException
 	{
@@ -66,9 +77,9 @@ public class BaseClass {
 	String browsername=prop.getProperty("Browser");
 	if(browsername.equals("chrome"))
 			{
-	//	System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chromedriver.exe");
 		//below is for remote machine and above one is for ur own VDI
-		System.setProperty("webdriver.chrome.driver","C:/chromedriver/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","C:/chromedriver/chromedriver.exe");
 		
 		driver =new ChromeDriver();
 		

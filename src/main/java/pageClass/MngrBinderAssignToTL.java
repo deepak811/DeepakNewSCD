@@ -119,7 +119,7 @@ public class MngrBinderAssignToTL extends BaseClass{
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		//JavascriptExecutor js = (JavascriptExecutor)driver;
 		JSONParser jparser= new JSONParser();
-		FileReader fr=new FileReader("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/testData/MngrLogin.json");
+		FileReader fr=new FileReader( System.getProperty("user.dir")+"/src/main/java/testData/MngrLogin.json");
 		JSONObject jobject=(JSONObject) jparser.parse(fr);
 		JSONArray jarray=(JSONArray) jobject.get("Credentials");
 		
