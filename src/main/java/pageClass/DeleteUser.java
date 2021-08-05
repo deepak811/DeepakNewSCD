@@ -27,18 +27,11 @@ public class DeleteUser extends BaseClass{
 	
 	@FindBy(xpath="//button[@id='btnDeleteUser']")
 	WebElement DeleteButton;
-	
-	@FindBy(xpath="//table/tbody/tr[1]/td[1]")
+	@FindBy(xpath="//a[@role='button']")
 	WebElement ThreeDots;
 	
 	
-	@FindBy
-	
-	
-	
-	
-	
-	(xpath="//button[text()='Yes']")
+	@FindBy(xpath="//button[text()='Yes']")
 	WebElement YesButton;
 	
 	@FindBy(xpath="//table/tbody/tr/td[2]")
@@ -83,6 +76,7 @@ public class DeleteUser extends BaseClass{
 	        SearchTxtBox.sendKeys(user);
 	        Thread.sleep(5000);
 	        
+	        AdminHomePage lgout=new AdminHomePage();
 		}
 	}
 

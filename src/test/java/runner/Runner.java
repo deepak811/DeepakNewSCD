@@ -21,7 +21,10 @@ import io.cucumber.junit.CucumberOptions;
 				
 				
 		//2)for editing a already created user by admin,test data file name "edit user details & delete"	 
-	tags="@Smoketest1 or @Smoketest2 or @Smoketest6",
+	//tags="@Smoketest1 or @Smoketest2 or @Smoketest6",
+	
+			//3)for deleting a already created user by admin,test data file name "edit user details & delete"	 
+			tags="@Smoketest1 or @Smoketest2 or @Smoketest7",
 	
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",
 			publish = true,
