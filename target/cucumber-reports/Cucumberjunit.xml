@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="181.679">
-    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="22.408">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="168.967">
+    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="11.117">
         <system-out><![CDATA[Given launch new SCD url....................................................passed
 When check title of login page..............................................passed
 Then verify actual title with expected title of New SCD login page..........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="verify new SCD login functionalty with Negative Login Credentials" time="34.312">
+    <testcase classname="NewSCD functional test" name="verify new SCD login functionalty with Negative Login Credentials" time="25.653">
         <system-out><![CDATA[Given user click on New SCD username text field.............................passed
 When user enters invalid username and password..............................passed
 And click on sign in button to login into New SCD...........................passed
@@ -15,26 +15,14 @@ Then user enters valid username and password................................pass
 And user click on sign in button to login into New SCD......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="Create New User" time="61.543">
-        <system-out><![CDATA[Given click on expand button................................................passed
-When click on user management...............................................passed
-Then click on create new user...............................................passed
-And enter details in create user form and save..............................passed
-Then click on logout button.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="NewSCD functional test" name="Newly created user login along with answering  security questions &amp; new password setting" time="53.232">
-        <system-out><![CDATA[Given login with newly created user login credentials.......................passed
-And Answer All Security questions...........................................passed
-When enter new password and confirm password................................passed
-And click on submit button..................................................passed
-Then redirect to New SCD Login Window.......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="NewSCD functional test" name="After saving new password for newly created user relogin with new credentials" time="9.698">
-        <system-out><![CDATA[Given relogin with new credentials of newly created user....................passed
-When click on sign in button................................................passed
-Then user is on New SCD homepage............................................passed
+    <testcase classname="NewSCD functional test" name="From Admin login Edit a user details" time="131.789">
+        <system-out><![CDATA[Given login New SCD with Admin User.........................................passed
+And click on NewSCD user management.........................................passed
+When Search for a user and click on three dots against a user...............passed
+And select option edit user.................................................passed
+And edit user details.......................................................passed
+And save the edited user details............................................passed
+Then check edited details are saved successfully............................passed
 ]]></system-out>
     </testcase>
 </testsuite>
