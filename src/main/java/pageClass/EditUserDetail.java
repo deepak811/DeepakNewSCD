@@ -37,7 +37,7 @@ public class EditUserDetail extends BaseClass {
 	@FindBy(xpath="//button[@id='btnEditUser']")
 	WebElement EditUserButton;
 	
-	@FindBy(xpath="//table/tbody/tr[1]/td[1]")
+	@FindBy(xpath="//a[@role='button']")
 	WebElement ThreeDots;
 	
 	
@@ -199,7 +199,8 @@ WebElement UserRoles;
 		SearchTxtBox.sendKeys(user);
 		Thread.sleep(8000);
 		
-		
+		AdminHomePage lgout=new AdminHomePage();
+		lgout.UserLogout();
 		
 	}
   }}
