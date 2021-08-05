@@ -16,8 +16,13 @@ import io.cucumber.junit.CucumberOptions;
 		plugin={"pretty", "html:target/cucumber-reports/cucumberhtml.html", "json:target/cucumber-reports/CucumberTestReport.json",
 				"junit:target/cucumber-reports/Cucumberjunit.xml"},
 	//plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
-				tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",	
-	//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5 or @Smoketest8 or @Smoketest9",
+		//1)from 1 to 5 for creating new user by admin user,test data file name "create new user formdetails"
+				//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",	
+				
+				
+		//2)for editing a already created user by admin,test data file name "edit user details & delete"	 
+	tags="@Smoketest1 or @Smoketest2 or @Smoketest6",
+	
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",
 			publish = true,
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest6", 
