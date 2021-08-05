@@ -21,9 +21,10 @@ import baseClass.BaseClass;
 public class NewlyCreatedUserLogin extends BaseClass {
 	
 	
-	@FindBy(id="LoginRequest_UserName")
+	@FindBy(xpath="//input[@name='LoginRequest.UserName']")
 	WebElement username;
-	@FindBy(id="LoginRequest_Password")
+	
+	@FindBy(xpath="//input[@name='LoginRequest.Password']")
 	WebElement password;
 	@FindBy(id="login")
 	WebElement signin;
