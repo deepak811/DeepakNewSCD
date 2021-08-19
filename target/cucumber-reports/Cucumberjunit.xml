@@ -1,57 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="33.765">
-    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="10.739">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="147.935">
+    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="12.558">
         <system-out><![CDATA[Given launch new SCD url....................................................passed
 When check title of login page..............................................passed
 Then verify actual title with expected title of New SCD login page..........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="After saving new password for newly created user relogin with new credentials" time="11.558">
+    <testcase classname="NewSCD functional test" name="After saving new password for newly created user relogin with new credentials" time="11.523">
         <system-out><![CDATA[Given relogin with new credentials of newly created user....................passed
 When click on sign in button................................................passed
 Then user is on New SCD homepage............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="Assign Binder to Team Lead" time="11.041">
-        <failure message="element click intercepted: Element &lt;td class=&quot;k-command-cell&quot; role=&quot;gridcell&quot;&gt;...&lt;/td&gt; is not clickable at point (132, 221). Other element would receive the click: &lt;table style=&quot;&quot;&gt;...&lt;/table&gt;&#10;  (Session info: chrome=92.0.4515.131)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'&#10;System info: host: 'WIN10-SPBA33', ip: '10.2.10.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DEEPAK~1.BAD\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:8408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0e56f61ae5d73b71db515bfa735d4818" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given login New SCD with Verification Manager...............................passed
+    <testcase classname="NewSCD functional test" name="Assign Binder to Team Lead" time="123.441">
+        <system-out><![CDATA[Given login New SCD with Verification Manager...............................passed
 And click on NewSCD Activity button.........................................passed
 When Search for Manager Assignment queue link and click on it...............passed
 And Click on Add Team Leads link............................................passed
 And Add Team Lead into Team Lead List pane..................................passed
 And Select an UnAssigned Binder and select Team Lead........................passed
-Then click on Assign button.................................................failed
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <td class="k-command-cell" role="gridcell">...</td> is not clickable at point (132, 221). Other element would receive the click: <table style="">...</table>
-  (Session info: chrome=92.0.4515.131)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'WIN10-SPBA33', ip: '10.2.10.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DEEPAK~1.BAD\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:8408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e56f61ae5d73b71db515bfa735d4818
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at pageClass.MngrBinderAssignToTL.CheckDeleteUsrFun(MngrBinderAssignToTL.java:203)
-	at pageClass.MngrBinderAssignToTL.BndrAssignmentToTL(MngrBinderAssignToTL.java:111)
-	at stepdefinition.AssignBinderToTeamLead.click_on_Assign_button(AssignBinderToTeamLead.java:53)
-	at ✽.click on Assign button(classpath:feature/NewSCDLoginFeature.feature:82)
-]]></failure>
+Then click on Assign button.................................................passed
+]]></system-out>
     </testcase>
 </testsuite>
