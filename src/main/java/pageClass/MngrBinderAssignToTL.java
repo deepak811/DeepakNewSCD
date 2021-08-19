@@ -165,7 +165,7 @@ public class MngrBinderAssignToTL extends BaseClass{
 		Thread.sleep(15000);
 		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		if(binderCheckBox.isSelected()==false)
-		binderCheckBox.click();
+			binderCheckBox.click();
 		Thread.sleep(5000);
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
