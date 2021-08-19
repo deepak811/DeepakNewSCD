@@ -77,6 +77,7 @@ public class DeleteUser extends BaseClass{
 	        Thread.sleep(5000);
 	        
 	        AdminHomePage lgout=new AdminHomePage();
+	        lgout.UserLogout();
 		}
 	}
 

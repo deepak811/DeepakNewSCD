@@ -24,12 +24,12 @@ import io.cucumber.junit.CucumberOptions;
 	//tags="@Smoketest1 or @Smoketest2 or @Smoketest6",
 	
 			//3)for deleting a already created user by admin,test data file name "edit user details & delete"	 
-			tags="@Smoketest1 or @Smoketest2 or @Smoketest7",
+			//tags="@Smoketest1 or @Smoketest2 or @Smoketest7",
 	
-			//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",
+			//4)
+			tags="@Smoketest1 or @Smoketest5 or @Smoketest8 or @Smoketest9 or @Smoketest10",
 			publish = true,
-			//tags="@Smoketest1 or @Smoketest2 or @Smoketest6", 
-				//tags="@Smoketest1 or @Smoketest2 or @Smoketest7", 
+			
 			//@Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5
 			//tags="@Smoketest1 or @Smoketest5 or @Smoketest10",
 	monochrome = true
