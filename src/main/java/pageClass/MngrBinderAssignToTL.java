@@ -33,7 +33,7 @@ public class MngrBinderAssignToTL extends BaseClass{
 	@FindBy(xpath="//button[@id='btnDeleteUser']")
 	WebElement DeleteButton;
 	
-	@FindBy(xpath="//table/tbody/tr[1]/td[1]")
+	@FindBy(xpath="//a[@role='button']")
 	WebElement ThreeDots;
 	
 	
