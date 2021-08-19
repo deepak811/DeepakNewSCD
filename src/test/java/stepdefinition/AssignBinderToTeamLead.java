@@ -41,12 +41,12 @@ public class AssignBinderToTeamLead extends BaseClass{
 	{
 		System.out.println("enter details & save");
 	}
-	@And ("Select an UnAssigned Binder and select Team Lead")
+	@And("Select an UnAssigned Binder and select Team Lead")
 	public void Select_an_UnAssigned_Binder_and_select_Team_Lead()
 	{
 		System.out.println("enter details & save");
 	}
-@Then("click on Assign button")
+    @Then("^click on Assign button$")
 public void click_on_Assign_button() throws InterruptedException, io.cucumber.core.gherkin.messages.internal.gherkin.internal.com.eclipsesource.json.ParseException, IOException, ParseException
 {
 	MngrBinderAssignToTL A=new MngrBinderAssignToTL();
