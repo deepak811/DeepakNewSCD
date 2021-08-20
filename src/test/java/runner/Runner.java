@@ -27,7 +27,7 @@ import io.cucumber.junit.CucumberOptions;
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest7",
 	
 			//4)
-			tags="@Smoketest1 or @Smoketest5 or @Smoketest8",
+			tags="@Smoketest1 or @Smoketest5 or @Smoketest9",
 			publish = true,
 			
 			//@Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5
