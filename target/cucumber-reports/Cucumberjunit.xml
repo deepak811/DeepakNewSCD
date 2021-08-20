@@ -1,54 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="175.402">
-    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="14.488">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="146.912">
+    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="11.892">
         <system-out><![CDATA[Given launch new SCD url....................................................passed
 When check title of login page..............................................passed
 Then verify actual title with expected title of New SCD login page..........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="After saving new password for newly created user relogin with new credentials" time="12.419">
+    <testcase classname="NewSCD functional test" name="After saving new password for newly created user relogin with new credentials" time="11.477">
         <system-out><![CDATA[Given relogin with new credentials of newly created user....................passed
 When click on sign in button................................................passed
 Then user is on New SCD homepage............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="Assign Binder to Team Lead" time="148.043">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='teamLeader']//*[contains(text(),'Augname1 Auglast1')]&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'&#10;System info: host: 'WIN10-SPBA33', ip: '10.2.10.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DEEPAK~1.BAD\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:8910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 805953ae76be2d69b8aa54fd6abd1db7&#10;*** Element info: {Using=xpath, value=//div[@id='teamLeader']//*[contains(text(),'Augname1 Auglast1')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given login New SCD with Verification Manager...............................passed
+    <testcase classname="NewSCD functional test" name="Assign Binder to Team Lead" time="123.115">
+        <system-out><![CDATA[Given login New SCD with Verification Manager...............................passed
 And click on NewSCD Activity button.........................................passed
 When Search for Manager Assignment queue link and click on it...............passed
 And Click on Add Team Leads link............................................passed
 And Add Team Lead into Team Lead List pane..................................passed
 And Select an UnAssigned Binder and select Team Lead........................passed
-Then click on Assign button.................................................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='teamLeader']//*[contains(text(),'Augname1 Auglast1')]"}
-  (Session info: chrome=92.0.4515.131)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'WIN10-SPBA33', ip: '10.2.10.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DEEPAK~1.BAD\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:8910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 805953ae76be2d69b8aa54fd6abd1db7
-*** Element info: {Using=xpath, value=//div[@id='teamLeader']//*[contains(text(),'Augname1 Auglast1')]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageClass.MngrBinderAssignToTL.BndrAssignmentToTL(MngrBinderAssignToTL.java:179)
-	at stepdefinition.AssignBinderToTeamLead.click_on_Assign_button(AssignBinderToTeamLead.java:53)
-	at ✽.click on Assign button(classpath:feature/NewSCDLoginFeature.feature:82)
-]]></failure>
+Then click on Assign button.................................................passed
+]]></system-out>
     </testcase>
 </testsuite>

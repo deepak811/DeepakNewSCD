@@ -176,8 +176,8 @@ public class MngrBinderAssignToTL extends BaseClass{
 		}
 		Thread.sleep(3000);
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//driver.findElement(By.xpath(xp)).click();
-		driver.findElement(By.xpath("//table/tbody/tr[1]/td[2][contains(text(),'"+ TeamLeadName +"')]")).click();
+		driver.findElement(By.xpath(xp)).click();
+		//driver.findElement(By.xpath("//table/tbody/tr[1]/td[2][contains(text(),'"+ TeamLeadName +"')]")).click();
 		Thread.sleep(3000);
 		if(binderAssigntoTL.isEnabled()==true)
 			
