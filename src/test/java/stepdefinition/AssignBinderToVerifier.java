@@ -50,8 +50,8 @@ public class AssignBinderToVerifier {
 @Then("click on Binder Assignment button")
 public void click_on_Binder_Assignment_button() throws InterruptedException, io.cucumber.core.gherkin.messages.internal.gherkin.internal.com.eclipsesource.json.ParseException, IOException, ParseException
 {
-	TLBinderAssignToVerifier A=new TLBinderAssignToVerifier();
-	A.BndrAssignmentToTL();
+	TLBinderAssignToVerifier B=new TLBinderAssignToVerifier();
+	B.BndrAssignmentToTL();
 	//AdminHomePage AHP=new AdminHomePage();
 	//AHP.UserLogout();
 	
