@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 	@RunWith(Cucumber.class)
 	@CucumberOptions
 	(
-	features="classpath:feature",
+	features="feature",
 			//below is for remote machine and above one is for ur own VDI
 	//		features="C:/Users/automatedtesting4/.jenkins/workspace/NewSCD WebApplication Functionality/src/test/java/feature/NewSCDLoginFeature.feature",
 			glue= {"stepdefinition"},
