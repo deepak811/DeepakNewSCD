@@ -17,7 +17,7 @@ import io.cucumber.junit.CucumberOptions;
 				"junit:target/cucumber-reports/Cucumberjunit.xml"},
 	//plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
 		//1)from 1 to 5 for creating new user by admin user,test data file name "create new user formdetails"
-			//tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",	
+			tags="@Smoketest1 or @Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5",	
 				
 				
 		//2)for editing a already created user by admin,test data file name "edit user details & delete"	 
@@ -31,7 +31,7 @@ import io.cucumber.junit.CucumberOptions;
 			publish = true,
 			
 			//5)just for verifer login & open the binder
-					tags="@Smoketest1 or @Smoketest5 or @Smoketest10",
+					//tags="@Smoketest1 or @Smoketest5 or @Smoketest10",
 			
 	monochrome = true
 			)
