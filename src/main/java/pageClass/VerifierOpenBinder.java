@@ -59,7 +59,7 @@ public class VerifierOpenBinder extends BaseClass{
 		Thread.sleep(5000);
 		
 		JSONParser jparser= new JSONParser();
-		FileReader fr=new FileReader("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/testData/VerifierLogin.json");//"C:/Users/manoj.mali/git/repository2/NewSCD/src/main/java/testData/logincred.json");
+		FileReader fr=new FileReader(System.getProperty("user.dir")+"/src/main/java/testData/VerifierLogin.json");
 		JSONObject jobject=(JSONObject) jparser.parse(fr);
 		JSONArray jarray=(JSONArray) jobject.get("Credentials");
 		for(int i=0;i<jarray.size();i++)

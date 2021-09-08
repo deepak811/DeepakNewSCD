@@ -26,12 +26,13 @@ import io.cucumber.junit.CucumberOptions;
 			//3)for deleting a already created user by admin,test data file name "edit user details & delete"	 
 			//tags="@Smoketest1 or @Smoketest2 or @Smoketest7",
 	
-			//4)
-			tags="@Smoketest1 or @Smoketest5 or @Smoketest8 or Smoketest9 or Smoketest10",
+			//4)here mngr will assign binder to team lead then  team lead assign binder to verifier & then verifier will open the binder
+			//tags="@Smoketest1 or @Smoketest5 or @Smoketest8 or @Smoketest9 or @Smoketest10",
 			publish = true,
 			
-			//@Smoketest2 or @Smoketest3 or @Smoketest4 or @Smoketest5
-			//tags="@Smoketest1 or @Smoketest5 or @Smoketest10",
+			//5)just for verifer login & open the binder
+					tags="@Smoketest1 or @Smoketest5 or @Smoketest10",
+			
 	monochrome = true
 			)
 		

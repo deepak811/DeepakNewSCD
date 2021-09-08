@@ -85,7 +85,7 @@ Then  click on Assign button
 @Smoketest9
 Scenario: Assign Binder to Verification
 
-Given login New SCD with Verification Team Lead
+Given login New SCD as Team Lead
 And   click on Activity button
 When  Search for Team Lead Assignment queue link and click on it
 And   Click on Add Verifiers link 

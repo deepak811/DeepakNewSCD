@@ -16,7 +16,7 @@ import pageClass.TLBinderAssignToVerifier;
 
 public class AssignBinderToVerifier {	
 	
-	@Given ("login New SCD with Verification Team Lead")
+	@Given ("login New SCD as Team Lead")
 	public void login_New_SCD_with_Verification_Team_Lead()
 	{
 		System.out.println("expand button");	

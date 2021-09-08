@@ -66,7 +66,7 @@ FileInputStream fis=new FileInputStream( System.getProperty("user.dir")+"/src/ma
 	Dc.setCapability("app", AppPath);
 	//Dc.setCapability("platformName", "Windows");
 	//Dc.setCapability("deviceName", "WindowsPC");
-	Windriver=new WindowsDriver<WebElement>(new URL("http://127.0.0.1:4723/"),Dc); 
+	Windriver=new WindowsDriver(new URL("http://127.0.0.1:4723/"),Dc); 
 	
 	}
 	
