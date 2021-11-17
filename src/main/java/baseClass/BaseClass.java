@@ -59,14 +59,14 @@ FileInputStream fis=new FileInputStream( System.getProperty("user.dir")+"/src/ma
 		return path;
 		 }
 
-	public void WinAppDriverMethod(String path) throws MalformedURLException, InterruptedException
+	public void WinAppDriverMethod()
 	{
-		String AppPath=path;
-	DesiredCapabilities Dc=new DesiredCapabilities();
-	Dc.setCapability("app", AppPath);
+		//String AppPath=path;
+	//DesiredCapabilities Dc=new DesiredCapabilities();
+	//Dc.setCapability("app", AppPath);
 	//Dc.setCapability("platformName", "Windows");
 	//Dc.setCapability("deviceName", "WindowsPC");
-	Windriver=new WindowsDriver(new URL("http://127.0.0.1:4723/"),Dc); 
+//	Windriver=new WindowsDriver(new URL("http://127.0.0.1:4723/"),Dc); 
 	
 	}
 	
