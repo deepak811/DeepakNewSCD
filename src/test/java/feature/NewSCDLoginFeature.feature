@@ -1,9 +1,6 @@
 Feature: NewSCD functional test
 
 
-
-
-
 @Smoketest1
 Scenario: verify title of new SCD login page
 
