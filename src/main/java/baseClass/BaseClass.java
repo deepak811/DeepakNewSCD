@@ -19,8 +19,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
-
-
+import org.openqa.selenium.winium.DesktopOptions;
+import org.openqa.selenium.winium.WiniumDriver;
 
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
@@ -30,7 +30,7 @@ import utilities.TestUtil;
 public class BaseClass {
 	public static WebDriver driver;
 	public static Properties prop;
-	public static WindowsDriver Windriver=null;
+	public static WiniumDriver Windriver;
 	 
 	
 	public BaseClass()
@@ -59,14 +59,27 @@ FileInputStream fis=new FileInputStream( System.getProperty("user.dir")+"/src/ma
 		return path;
 		 }
 
-	public void WinAppDriverMethod()
+	public void WiniumMethod(String path) throws MalformedURLException
 	{
-		//String AppPath=path;
+		
+        String appPath = path;
+        //"C:/Program Files (x86)/SurePrepLLC/PBFX/SurePrep.PortableBinderFormat(PBF).exe";
+  DesktopOptions option = new DesktopOptions();
+ option.setApplicationPath(appPath);
+  option.setDebugConnectToRunningApp(false);
+  option.setLaunchDelay(5);
+  WiniumDriver   Windriver = new WiniumDriver(new URL("http://localhost:9999"),option);
+
+		/*
+		 * this is for winappdriver
+		 * /String AppPath=path;
 	//DesiredCapabilities Dc=new DesiredCapabilities();
 	//Dc.setCapability("app", AppPath);
 	//Dc.setCapability("platformName", "Windows");
 	//Dc.setCapability("deviceName", "WindowsPC");
 //	Windriver=new WindowsDriver(new URL("http://127.0.0.1:4723/"),Dc); 
+		 */
+		
 	
 	}
 	

@@ -23,7 +23,7 @@ public class RunDestopFunctionality extends BaseClass
 public void ProcessWorkflow(String path) throws InterruptedException, MalformedURLException {
         //Thread.sleep(40000);
 	
- 	//WinAppDriverMethod(path);
+ 	WiniumMethod(path);
 	Thread.sleep(40000);
 	Windriver.findElement(By.xpath("/Pane[@Name='Desktop 1'][@ClassName='#32769']/window[@AutomationId='frmlogoscreen'][@Name='1040SCAN : Review Wizard']/button[starts-with(@AutomationId,'Button2')][@Name='Next &gt;']")).click();
 
