@@ -59,17 +59,27 @@ FileInputStream fis=new FileInputStream( System.getProperty("user.dir")+"/src/ma
 		return path;
 		 }
 
-	public void WiniumMethod(String path) throws MalformedURLException
+	//public void WiniumMethod(String path) throws MalformedURLException
+	 //String appPath = path;
+	 public static void main(String[] args) throws MalformedURLException
 	{
 		
-        String appPath = path;
+        String appPath = "C:/Program Files (x86)/SurePrepLLC/PBFX/SurePrep.PortableBinderFormat(PBF).exe";
         //"C:/Program Files (x86)/SurePrepLLC/PBFX/SurePrep.PortableBinderFormat(PBF).exe";
   DesktopOptions option = new DesktopOptions();
  option.setApplicationPath(appPath);
   option.setDebugConnectToRunningApp(false);
   option.setLaunchDelay(5);
   WiniumDriver   Windriver = new WiniumDriver(new URL("http://localhost:9999"),option);
-
+ WebElement element=Windriver.findElement(By.id("SPVContainer"));
+ Windriver.findElement(By.xpath("//*[@id='Submit']")).click();
+ Windriver.findElement(By.xpath("//button[text()='Submit Engagement']")).click();
+ Windriver.findElement(By.xpath("//button[text()='Submit']")).click();
+ Windriver.findElement(By.xpath("//button[contains(@AutomationId,'Submit')]")).click();
+ Windriver.findElement(By.xpath("//button[@AutomationId='Submit']")).click();
+  Windriver.findElement(By.xpath("//button[@id='Submit']")).click();
+  
+//button[@id='btnCreateUser']
 		/*
 		 * this is for winappdriver
 		 * /String AppPath=path;
@@ -90,7 +100,7 @@ FileInputStream fis=new FileInputStream( System.getProperty("user.dir")+"/src/ma
 	String browsername=prop.getProperty("Browser");
 	if(browsername.equals("chrome"))
 			{
-	System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chromedriver/chromedriver.exe");
 		//below is for remote machine and above one is for ur own VDI
 		//System.setProperty("webdriver.chrome.driver","C:/chromedriver/chromedriver.exe");
 		
