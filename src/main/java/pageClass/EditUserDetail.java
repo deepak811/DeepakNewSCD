@@ -37,7 +37,7 @@ public class EditUserDetail extends BaseClass {
 	@FindBy(xpath="//button[@id='btnEditUser']")
 	WebElement EditUserButton;
 	
-	@FindBy(xpath="//table/tbody/tr/td/a")
+	@FindBy(xpath="//a[@role='button']")
 	WebElement ThreeDots;
 	
 	
@@ -132,9 +132,9 @@ WebElement UserRoles;
 			System.out.println("JSON"+user);
 			if(val.contains(user))
 			{
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 				ThreeDots.click(); 
-			    Thread.sleep(10000);
+			    Thread.sleep(5000);
 			    
 			    EditUserButton.click();
 				if(verifyEditForm.getText().contains("You can Edit the details of the user")) {
