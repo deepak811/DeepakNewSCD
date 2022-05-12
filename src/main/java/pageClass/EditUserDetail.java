@@ -132,9 +132,9 @@ WebElement UserRoles;
 			System.out.println("JSON"+user);
 			if(val.contains(user))
 			{
-				Thread.sleep(5000);
+				Thread.sleep(10000);
 				ThreeDots.click(); 
-			    Thread.sleep(5000);
+			    Thread.sleep(10000);
 			    
 			    EditUserButton.click();
 				if(verifyEditForm.getText().contains("You can Edit the details of the user")) {
