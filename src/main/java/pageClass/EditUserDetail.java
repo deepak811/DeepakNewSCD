@@ -37,7 +37,7 @@ public class EditUserDetail extends BaseClass {
 	@FindBy(xpath="//button[@id='btnEditUser']")
 	WebElement EditUserButton;
 	
-	@FindBy(xpath="//a[@role='button']")
+	@FindBy(xpath="//table/tbody/tr/td/a")
 	WebElement ThreeDots;
 	
 	
