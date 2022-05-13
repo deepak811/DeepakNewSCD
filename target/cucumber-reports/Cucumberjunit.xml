@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="183.535">
-    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="14.258">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="98.275">
+    <testcase classname="NewSCD functional test" name="verify title of new SCD login page" time="13.725">
         <system-out><![CDATA[Given launch new SCD url....................................................passed
 When check title of login page..............................................passed
 Then verify actual title with expected title of New SCD login page..........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="verify new SCD login functionalty with Negative Login Credentials" time="29.019">
+    <testcase classname="NewSCD functional test" name="verify new SCD login functionalty with Negative Login Credentials" time="29.854">
         <system-out><![CDATA[Given user click on New SCD username text field.............................passed
 When user enters invalid username and password..............................passed
 And click on sign in button to login into New SCD...........................passed
@@ -15,14 +15,12 @@ Then user enters valid username and password................................pass
 And user click on sign in button to login into New SCD......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="NewSCD functional test" name="From Admin login Edit a user details" time="139.813">
-        <system-out><![CDATA[Given login New SCD with Admin User.........................................passed
-And click on NewSCD user management.........................................passed
-When Search for a user and click on three dots against a user...............passed
-And select option edit user.................................................passed
-And edit user details.......................................................passed
-And save the edited user details............................................passed
-Then check edited details are saved successfully............................passed
+    <testcase classname="NewSCD functional test" name="From Admin delete a user" time="54.268">
+        <system-out><![CDATA[Given login New SCD with Admin..............................................passed
+And click on NewSCD user mgmt...............................................passed
+When Search for a user and click on three dots..............................passed
+And select delete user and click on OK......................................passed
+Then confirm user is deleted successfully...................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-05-12T12:00:59.097Z",
+        "start_timestamp": "2022-05-12T12:06:05.271Z",
         "before": [
           {
             "result": {
-              "duration": 2992500,
+              "duration": 2996900,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 998700,
+              "duration": 2006500,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9102403000,
+              "duration": 8552320400,
               "status": "passed"
             },
             "line": 7,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2052039700,
+              "duration": 2054080400,
               "status": "passed"
             },
             "line": 8,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 3003104500,
+              "duration": 3011115900,
               "status": "passed"
             },
             "line": 9,
@@ -77,11 +77,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-05-12T12:01:13.381Z",
+        "start_timestamp": "2022-05-12T12:06:19.025Z",
         "before": [
           {
             "result": {
-              "duration": 1000900,
+              "duration": 998400,
               "status": "passed"
             },
             "match": {
@@ -108,7 +108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 999000,
+              "duration": 1000300,
               "status": "passed"
             },
             "line": 15,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 29008038400,
+              "duration": 29846017100,
               "status": "passed"
             },
             "line": 16,
@@ -132,6 +132,7 @@
           },
           {
             "result": {
+              "duration": 999000,
               "status": "passed"
             },
             "line": 17,
@@ -154,7 +155,6 @@
           },
           {
             "result": {
-              "duration": 1022700,
               "status": "passed"
             },
             "line": 19,
@@ -183,7 +183,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-05-12T12:01:42.417Z",
+        "start_timestamp": "2022-05-12T12:06:48.892Z",
         "before": [
           {
             "result": {
@@ -194,10 +194,10 @@
             }
           }
         ],
-        "line": 50,
-        "name": "From Admin login Edit a user details",
+        "line": 62,
+        "name": "From Admin delete a user",
         "description": "",
-        "id": "newscd-functional-test;from-admin-login-edit-a-user-details",
+        "id": "newscd-functional-test;from-admin-delete-a-user",
         "after": [
           {
             "result": {
@@ -213,12 +213,13 @@
         "steps": [
           {
             "result": {
+              "duration": 9178327300,
               "status": "passed"
             },
-            "line": 52,
-            "name": "login New SCD with Admin User",
+            "line": 64,
+            "name": "login New SCD with Admin",
             "match": {
-              "location": "stepdefinition.EditUserDetails.login_new_scd_with_admin_user()"
+              "location": "stepdefinition.DeleteUserFrmAdmn.login_New_SCD_with_Admin()"
             },
             "keyword": "Given "
           },
@@ -226,75 +227,52 @@
             "result": {
               "status": "passed"
             },
-            "line": 53,
-            "name": "click on NewSCD user management",
+            "line": 65,
+            "name": "click on NewSCD user mgmt",
             "match": {
-              "location": "stepdefinition.EditUserDetails.click_on_NewSCD_user_management()"
+              "location": "stepdefinition.DeleteUserFrmAdmn.click_on_NewSCD_user_mgmt()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 139806819800,
+              "duration": 45078481600,
               "status": "passed"
             },
-            "line": 54,
-            "name": "Search for a user and click on three dots against a user",
+            "line": 66,
+            "name": "Search for a user and click on three dots",
             "match": {
-              "location": "stepdefinition.EditUserDetails.Search_for_a_user_and_click_on_three_dots_against_a_user()"
+              "location": "stepdefinition.DeleteUserFrmAdmn.Search_for_a_user_and_click_on_three_dots()"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "select option edit user",
-            "match": {
-              "location": "stepdefinition.EditUserDetails.select_option_edit_user()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "edit user details",
-            "match": {
-              "location": "stepdefinition.EditUserDetails.edit_user_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1002300,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "save the edited user details",
-            "match": {
-              "location": "stepdefinition.EditUserDetails.save_the_edited_user_details()"
-            },
-            "keyword": "And "
           },
           {
             "result": {
               "duration": 1000000,
               "status": "passed"
             },
-            "line": 58,
-            "name": "check edited details are saved successfully",
+            "line": 67,
+            "name": "select delete user and click on OK",
             "match": {
-              "location": "stepdefinition.EditUserDetails.check_edited_detsils_are_saved_successfully()"
+              "location": "stepdefinition.DeleteUserFrmAdmn.select_delete_user_and_click_on_OK()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "confirm user is deleted successfully",
+            "match": {
+              "location": "stepdefinition.DeleteUserFrmAdmn.confirm_user_is_deleted_successfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Smoketest6"
+            "name": "@Smoketest7"
           }
         ]
       }
