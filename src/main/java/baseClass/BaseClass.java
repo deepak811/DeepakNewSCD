@@ -100,7 +100,7 @@ FileInputStream fis=new FileInputStream( System.getProperty("user.dir")+"/src/ma
 	String browsername=prop.getProperty("Browser");
 	if(browsername.equals("chrome"))
 			{
-	System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chromedriver/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:/chromedriver2/chrdriver/chromedriver.exe");
 		//below is for remote machine and above one is for ur own VDI
 		//System.setProperty("webdriver.chrome.driver","C:/chromedriver/chromedriver.exe");
 		
